@@ -122,4 +122,13 @@ a:hover::after{
         display: none;
     } 
      
- }
+ }<style>
+    .exercise-box {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 6px;
+        width: 250px;   /* genişlik */
+        height: 200px;  /* yükseklik */
+    }
+</style>
