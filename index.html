@@ -1,34 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nefesle Derinleş – Hoş geldiniz!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="main.css">
-</head>
+    <style>
+        /* Temel tarzlar – amatör ama şık olsun :) */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2f9ff;
+            font-family: Verdana, sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #6ab7ff;
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+        }
+        nav {
+            background-color: #4a90e2;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .exercises {
+            display: grid;
+            grid-template-columns: 1fr; /* Telefon ekranı: kutular alt alta */
+            gap: 20px;
+            padding: 20px;
+        }
+        .exercise-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .exercise-box h3 {
+            margin-top: 0;
+            color: #4a90e2;
+        }
+        footer {
+            background-color: #6ab7ff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
 
+        /* Tablet ekranı: 2 sütun */
+        @media (min-width: 600px) {
+            .exercises {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Bilgisayar ekranı: 3 sütun */
+        @media (min-width: 900px) {
+            .exercises {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
 <body>
+
     <header>
         <h1>Nefesle Derinleş</h1>
         <p>Amatör bir yazılımcıdan, nefesle huzura küçük bir adım!</p>
     </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
-            <li><a href="#"><i class="fa-solid fa-spa"></i> Nefes Egzersizleri</a></li>
-            <li><a href="#">Hakkımızda</a></li>
-            <li><a href="#">İletişim</a></li>
-        </ul>
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Nefes Egzersizleri</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
     </nav>
 
     <section class="hero">
         <h2>Rahatlayın. Sakinleşin. Nefes alın.</h2>
         <p>
-            Günün stresinden benzer yollarla kurtulmak mı istiyorsun? İşte nefesle basit teknikler – amatör bir
-            dokunuşla, ama etkili!
+            Günün stresinden benzer yollarla kurtulmak mı istiyorsun? İşte nefesle basit teknikler – amatör bir dokunuşla, ama etkili!
             Başlamak için seçtiğimiz üç temel nefes egzersizini aşağıda bulabilirsin.
         </p>
     </section>
@@ -36,13 +110,11 @@
     <section class="exercises">
         <div class="exercise-box">
             <h3>1. 4-7-8 Nefesi</h3>
-            <p>Burnundan 4 saniye nefes al, 7 saniye nefesi tut, ardından 8 saniyede yavaşça bırak. Sakinleşmenin
-                anahtarı.</p>
+            <p>Burnundan 4 saniye nefes al, 7 saniye nefesi tut, ardından 8 saniyede yavaşça bırak. Sakinleşmenin anahtarı.</p>
         </div>
         <div class="exercise-box">
             <h3>2. Diyafram Nefesi</h3>
-            <p>Sırtına ya da karnına elini koy, derin nefes al ve karnını köpük gibi şişir. Sonra usulca ver. Stresi
-                kov!</p>
+            <p>Sırtına ya da karnına elini koy, derin nefes al ve karnını köpük gibi şişir. Sonra usulca ver. Stresi kov!</p>
         </div>
         <div class="exercise-box">
             <h3>3. Sayarak Nefes</h3>
@@ -54,7 +126,5 @@
         <p>&copy; 2025 Nefesle Derinleş – Başlangıçta amatör ama sevgiyle</p>
     </footer>
 
-    <script src="app.js"></script>
 </body>
-
 </html>
