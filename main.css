@@ -71,11 +71,11 @@ nav a:hover::after {
         }
 
         .exercise-box5 {
-            background-color: white;
+            background-color:gray;
             border: 1px solid #ddd;
             padding: 20px;
             border-radius: 6px;
-            width: 250px;   /* genişlik */
+            width: 350px;   /* genişlik */
             height: 200px;  /* yükseklik */
             box-sizing: border-box; /* padding genişlikten düşmesin */
         }
@@ -101,7 +101,7 @@ nav a:hover::after {
         }
 
         /* Bilgisayar ekranı: 3 sütun */
-        @media (min-width: 900px) {
+        @media (min-width: 600px) {
             .exercises {
                 grid-template-columns: repeat(3, 250px);
             }
