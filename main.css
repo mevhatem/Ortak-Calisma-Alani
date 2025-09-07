@@ -1,134 +1,81 @@
- /* Temel tarzlar – amatör ama şık olsun :) */
- body {
-     margin: 0;
-     padding: 0;
-     background-color: #f2f9ff;
-     font-family: Verdana, sans-serif;
-     color: #333;
- }
 
- header {
-     background-color: #6ab7ff;
-     color: white;
-     text-align: center;
-     padding: 40px 10px;
- }
+        /* Temel tarzlar – amatör ama şık olsun :) */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2f9ff;
+            font-family: Verdana, sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #6ab7ff;
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+        }
+        nav {
+            background-color: #4a90e2;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .exercises {
+            display: grid;
+            grid-template-columns: 1fr; /* Telefon ekranı: kutular alt alta */
+            gap: 20px;
+            padding: 20px;
+        }
+        .exercise-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .exercise-box h3 {
+            margin-top: 0;
+            color: #4a90e2;
+        }
+        footer {
+            background-color: #6ab7ff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
 
- nav {    
-    background-color: #4a90e2;
-    text-align: center;
-    height: 50px;
+        /* Tablet ekranı: 2 sütun */
+        @media (min-width: 600px) {
+            .exercises {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Bilgisayar ekranı: 3 sütun */
+        @media (min-width: 900px) {
+            .exercises {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     
-     
- }
- 
-nav ul {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-evenly; 
-    margin: 0; 
-
-
-}
-
- nav ul li {
-    list-style-type: none;  
-    transition: all 0.3s ease;    
-    
- }
-
- nav a {
-     color: white;
-     margin: 0 12px;
-     text-decoration: none;
-     font-size: 14px;
-     text-align: center;
-     position: relative;
-     
- }
-
-nav li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #f2f9ff;
-    transform: scalex(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-    
-}
-
-a:hover::after{
-    transform: scalex(1);
-}
-
- .hero {
-     padding: 60px 20px;
-     text-align: center;
- }
-
- .hero h2 {
-     font-size: 28px;
-     margin-bottom: 15px;
- }
-
- .hero p {
-     font-size: 16px;
-     line-height: 1.5;
-     max-width: 600px;
-     margin: 0 auto;
- }
-
- .exercises {
-     display: grid;
-     grid-template-columns: 1fr;
-     gap: 20px;
-     padding: 20px;
- }
-
- .exercise-box {
-     background-color: white;
-     border: 1px solid #ddd;
-     padding: 20px;
-     border-radius: 6px;
- }
-
- .exercise-box h3 {
-     margin-top: 0;
-     color: #4a90e2;
- }
-
- footer {
-     background-color: #6ab7ff;
-     color: white;
-     text-align: center;
-     padding: 15px;
-     font-size: 14px;
- }
-
- /* Basit mobil uyumluluk, amatör hali :) */
- @media (max-width: 600px) {
-     .exercises {
-         grid-template-columns: repeat(1 1fr)
-     }
-     .navbar{
-        
-     }
-    .navbar ul{
-        display: none;
-    } 
-     
- }<style>
-    .exercise-box {
-        background-color: white;
-        border: 1px solid #ddd;
-        padding: 20px;
-        border-radius: 6px;
-        width: 250px;   /* genişlik */
-        height: 200px;  /* yükseklik */
-    }
-</style>
