@@ -76,7 +76,7 @@ nav a:hover::after {
             padding: 20px;
             border-radius: 6px;
             width: 250px;   /* genişlik */
-            height: 600px;  /* yükseklik */
+            height: 350px;  /* yükseklik */
             box-sizing: border-box; /* padding genişlikten düşmesin */
         }
 
