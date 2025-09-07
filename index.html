@@ -3,7 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <title>Nefesle Derinleş – Hoş geldiniz!</title>
-    <link rel="stylesheet" href="main.css"
+    <style>
+        /* Genel stiller */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2f9ff;
+            font-family: Verdana, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #6ab7ff;
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+        }
+
+        nav {
+            background-color: #4a90e2;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .exercises {
+            display: grid;
+            grid-template-columns: 1fr; /* Telefon ekranı: kutular alt alta */
+            gap: 20px;
+            padding: 20px;
+            justify-content: center; /* kutuları ortala */
+        }
+
+        .exercise-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 6px;
+            width: 250px;   /* genişlik */
+            height: 600px;  /* yükseklik */
+            box-sizing: border-box; /* padding genişlikten düşmesin */
+        }
+
+        .exercise-box h3 {
+            margin-top: 0;
+            color: #4a90e2;
+        }
+
+        footer {
+            background-color: #6ab7ff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* Tablet ekranı: 2 sütun */
+        @media (min-width: 600px) {
+            .exercises {
+                grid-template-columns: repeat(2, 250px);
+            }
+        }
+
+        /* Bilgisayar ekranı: 3 sütun */
+        @media (min-width: 900px) {
+            .exercises {
+                grid-template-columns: repeat(3, 250px);
+            }
+        }
+    </style>
 </head>
 <body>
 
